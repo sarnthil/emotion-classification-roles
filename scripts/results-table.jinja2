@@ -1,0 +1,6 @@
+\begin{tabular}{cccccccccc}
+Dataset & \multicolumn{3}{c}{All} & \multicolumn{3}{c}{Without} & \multicolumn{3}{c}{Only} & \multicolumn{3}{c}{Pos}\\
+& P & R & \F & P & R & \F & P & R & \F & P & R & \F \\
+{% for dataset in posdata %}\sep
+{% for role in posdata[dataset] %}{{ label[dataset] }}-{{role}} & {{ maskdata[dataset]['all'] }} & {{ maskdata[dataset]['without_' + role] }} & {{ maskdata[dataset]['only_' + role] }} & {{ posdata[dataset][role] }} \\
+{% endfor %}{% endfor %}\end{tabular}
