@@ -1,8 +1,8 @@
 # Experiencers, Stimuli, or Targets: Which Semantic Roles Enable Machine Learning to Infer the Emotions?
 
 ## Extract the data
-- use this repo for extracting the necessary data: https://github.com/sarnthil/extract-emotion-data
-- move `splitted.json` in `sources/`
+- Extract data via https://github.com/sarnthil/extract-emotion-data/
+- `mv extract-emotion-data/workdata/splitted.json emotion-classification-roles/sources/`
 
 # Reference
 
